@@ -1,0 +1,22 @@
+# Fichiers Python à ignorer
+__pycache__/
+*.pyc
+*.pyo
+
+# Dossiers virtuels
+.env/
+venv/
+
+# Réglages locaux VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
+*.tar.gz

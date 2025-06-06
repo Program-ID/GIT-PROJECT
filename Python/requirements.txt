@@ -1,0 +1,5 @@
+# Dépendances Python pour le projet
+# Ces modules permettent un affichage enrichi et une meilleure gestion des fichiers
+
+rich       # Pour afficher du texte stylisé et des tableaux dans le terminal
+chardet    # Pour détecter automatiquement l'encodage des fichiers texte
