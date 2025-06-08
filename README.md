@@ -39,7 +39,7 @@ mon-projet/
 ### 1. Cloner le dépôt GitHub
 
 ```bash
-git clone https://github.com/Program-ID/mon-projet.git
+git clone https://github.com/Program-ID/GIT-PROJECT.git
 cd mon-projet
 ```
 
@@ -129,7 +129,7 @@ python main.py
 ## ✍️ Auteur
 
 Nom : Laurent Ferrer 
-URL GitHub : (https://github.com/Program-ID/mon-projet.git)
+URL GitHub : [https://github.com/Program-ID/GIT-PROJECT.git](https://github.com/Program-ID/GIT-PROJECT.git)
 Contact : mail.laurent.ferrer@gmail.com
 
 ---
