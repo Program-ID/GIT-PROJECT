@@ -128,9 +128,9 @@ python main.py
 
 ## ✍️ Auteur
 
-Nom : Laurent Ferrer 
-URL GitHub : [https://github.com/Program-ID/GIT-PROJECT.git](https://github.com/Program-ID/GIT-PROJECT.git)
-Contact : mail.laurent.ferrer@gmail.com
+**Nom** : Laurent Ferrer  
+**GitHub** : [https://github.com/Program-ID/GIT-PROJECT.git](https://github.com/Program-ID/GIT-PROJECT.git)  
+**Contact** : [mail.laurent.ferrer@gmail.com](mailto:mail.laurent.ferrer@gmail.com)
 
 ---
 
