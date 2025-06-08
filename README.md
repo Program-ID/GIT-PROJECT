@@ -20,6 +20,7 @@ Il constitue une **base pédagogique et technique** pour développer, organiser 
 mon-projet/
 ├── README.md               # Ce fichier de documentation
 ├── .gitignore              # Fichiers/dossiers à exclure du suivi Git
+├── .gitattributes          # Règles pour normaliser les fins de ligne selon les fichiers
 ├── Python/
 │   ├── main.py             # Point d'entrée Python pour l'analyse ou l'outillage
 │   └── requirements.txt    # Dépendances Python du projet
@@ -27,6 +28,7 @@ mon-projet/
 │   └── exemple1.rexx       # Exemple ou script d'outillage REXX
 ├── Cobol/
 │   └── exemple1.cbl        # Exemple ou outil d’analyse COBOL
+├── fix_eol.sh              # Script de correction des fins de ligne (CRLF -> LF)
 └── install_project.sh      # Script shell pour initialiser automatiquement un environnement
 ```
 
@@ -53,6 +55,38 @@ pip install -r python/requirements.txt
 
 ---
 
+## ⚠️ Normaliser les fins de ligne (CRLF vs LF)
+Sous Windows, les fichiers .sh sont souvent enregistrés avec des retours chariot CRLF. Cela peut provoquer des erreurs dans Git Bash ou sur GitHub.
+Le fichier .gitattributes force les bonnes fins de ligne selon l'extension :
+
+arduino
+Copier
+Modifier
+*.sh text eol=lf
+*.py text=auto
+*.md text=auto
+*.csv text=auto
+*.bat text eol=crlf
+README.md text eol=lf
+
+## 🧰 Correction automatique avec fix_eol.sh
+Le script fix_eol.sh permet de corriger les fins de ligne en LF pour les extensions .sh, .py, .md, .csv.
+
+Exécution réelle :
+bash
+Copier
+Modifier
+./fix_eol.sh
+Mode simulation (aucune modification) :
+bash
+Copier
+Modifier
+./fix_eol.sh --dry-run
+Assurez-vous que dos2unix est installé (voir ci-dessous).
+
+---
+
+
 ## ▶️ Exécution de l'outil Python
 
 ```bash
@@ -70,6 +104,9 @@ python main.py
 
 - Python 3.10 ou supérieur
 - Git & GitHub
+- dos2unix (convertisseur CRLF → LF) :
+  - Téléchargeable ici : https://waterlan.home.xs4all.nl/dos2unix.html
+  - Ajouter C:\Outils\dos2unix dans votre variable d’environnement PATH
 - Visual Studio Code avec les extensions :
   - Python (Microsoft)
   - GitHub Pull Requests and Issues
